@@ -6,24 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEB PAGE NAME HERE</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <h1>Japanese Sentence Converter</h1>
     </header>
 
-    <main>
+    <main class="vFlex">
+        <form class="vFlex inputBox">
+            <h2>Type your japanese text here!</h2>
+            <textarea class="inputText" rows="15" cols="80"></textarea>
+
+            <div class="hFlex">
+                <select class="convertTo">
+                    <option value="hiragana">Hiragana</option>
+                    <option value="katakana">Katakana</option>
+                    <option value="romaji">Romaji</option>
+                </select>
+
+                <select class="conversionMode">
+                    <option value="normal">Normal</option>
+                    <option value="spaced">Spaced</option>
+                    <option value="okurigana">Okurigana</option>
+                    <option value="furigana">Furigana</option>
+                </select>
+            </div>
+            <button type="button" class="convertButton">convert</button>
+        </form>
+
+        <div class="vFlex resultsBox">
+            <h3>Result:</h3>
+            <p class="convertedResult"></p>
+        </div>
     </main>
 
     <footer>
-        /*INSERT FOOTER CONTENT*/
     </footer>
 
-    <script type="module" src="./kuroshiro-analyzer-kuromoji.min.js"></script>
-    <script type="module" src="./kuromoji/core.js"></script>
-    <script type="module" src="./kuromoji/util.js"></script>
-    <script type="module" src="./kuromoji/kuromoji.min.js"></script>
-    <script src="./script.js"></script>
+    <script type="module" src="./kuroshiro/util.js"></script>
+    <script type="module" src="./kuroshiro/core.js"></script>
+    <script type="module" src="./kuroshiro/kuroshiro.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>

@@ -4,3 +4,53 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #F5E8ED;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E83261;
+    background-image: url("./imgs/1295009.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    width: 100%;
+    height: 200px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 45px;
+}
+
+main {
+    width: 50%;
+    max-width: 640px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.hFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+vFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.convertedResult {
+    white-space: pre-wrap;
+}
