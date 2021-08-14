@@ -1,7 +1,3 @@
-/* IDEAS 
-- use OCR (Optical Character Recognition) API to allow images to be scanned and converted as well
-*/
-
 import Kuroshiro from "./kuroshiro/kuroshiro.js";
 // Initialize kuroshiro with an instance of analyzer (You could check the [apidoc](#initanalyzer) for more information):
 // For this example, you should npm install and import the kuromoji analyzer first
@@ -40,3 +36,11 @@ const convertInputText = async () => {
 document.querySelector(".convertButton").addEventListener("click", () => {
     convertInputText();
 });
+
+document.querySelector(".convertButton").addEventListener("mouseover", () => {
+    document.querySelector(".convertButton").innerHTML = "コンバート";
+});
+
+document.querySelector(".convertButton").addEventListener("mouseout", () => {
+    document.querySelector(".convertButton").innerHTML = "Convert";
+})

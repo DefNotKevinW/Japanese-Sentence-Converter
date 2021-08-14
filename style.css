@@ -33,8 +33,13 @@ header h1 {
 main {
     width: 50%;
     max-width: 640px;
-    margin: auto;
+    margin: 30px auto;
     padding: 20px 10px;
+}
+
+select {
+    background: transparent;
+    border: 2px sold #000;
 }
 
 .hFlex {
@@ -44,11 +49,88 @@ main {
     align-items: center;
 }
 
-vFlex {
+.vFlex {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.inputBox h2 {
+    margin: 0 0 10px 0;
+}
+
+.inputText {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+.settingsBox {
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.settingsBox h3 {
+    margin: 0 0 5px 0;
+}
+
+.leftCol {
+    margin-right: 20px;
+}
+
+.settings {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    transition: 0.15s ease-in;
+    background: #FFCBE1;
+}
+
+.convertedResult {
+    font-size: 17px;
+}
+
+/* Convert Button Styling */
+
+.convertButton {
+    position: relative;
+    background: transparent;
+    width: 12rem;
+    padding: 7px 40px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+.convertButton:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.convertButton:hover {
+    color: #FFF;
+}
+
+.convertButton:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.convertButton:active {
+    top: 2px;
 }
 
 .convertedResult {

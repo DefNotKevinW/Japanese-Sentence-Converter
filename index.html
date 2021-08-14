@@ -21,21 +21,27 @@
             <h2>Type your japanese text here!</h2>
             <textarea class="inputText" rows="15" cols="80"></textarea>
 
-            <div class="hFlex">
-                <select class="convertTo">
-                    <option value="hiragana">Hiragana</option>
-                    <option value="katakana">Katakana</option>
-                    <option value="romaji">Romaji</option>
-                </select>
-
-                <select class="conversionMode">
-                    <option value="normal">Normal</option>
-                    <option value="spaced">Spaced</option>
-                    <option value="okurigana">Okurigana</option>
-                    <option value="furigana">Furigana</option>
-                </select>
+            <div class="hFlex settingsBox">
+                <div class="vFlex leftCol">
+                    <h3>Convert to</h3>
+                    <select class="settings convertTo">
+                        <option value="hiragana">Hiragana</option>
+                        <option value="katakana">Katakana</option>
+                        <option value="romaji">Romaji</option>
+                    </select>
+                </div>
+                
+                <div class="vFlex rightCol">
+                    <h3>Conversion mode</h3>
+                    <select class="settings conversionMode">
+                        <option value="normal">Normal</option>
+                        <option value="spaced">Spaced</option>
+                        <option value="okurigana">Okurigana</option>
+                        <option value="furigana">Furigana</option>
+                    </select>
+                </div>
             </div>
-            <button type="button" class="convertButton">convert</button>
+            <button type="button" class="convertButton">Convert</button>
         </form>
 
         <div class="vFlex resultsBox">
@@ -45,6 +51,7 @@
     </main>
 
     <footer>
+        
     </footer>
 
     <script type="module" src="./kuroshiro/util.js"></script>
